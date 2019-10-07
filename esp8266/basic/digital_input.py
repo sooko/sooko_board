@@ -1,0 +1,1 @@
+from machine import Pinimport timebutton=Pin(0,Pin.IN)          #mengaktifkan tombol pada pin 0led=Pin(2,Pin.OUT)             #mengaktifkan pin LEDwhile True:  led.value(button.value())     #Gets the state of the Button and passes the state to the LED  time.sleep(0.5)  print(led.value())
